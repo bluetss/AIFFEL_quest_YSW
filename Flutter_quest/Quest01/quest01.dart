@@ -2,10 +2,12 @@ import 'dart:async';
 
 void startTimer() {
   print('Pomodoro 타이머를 시작합니다.');
+  // 기본 설정 변수 사이클횟수, 작업시간, 휴식시간 정보를 저장함.
   int count = 1;
   int workTime = 1500;
   int restTime = 300;
 
+  // 타이머 실행함수, Duration을 1초로 설정하여 1초마다 콜백함수가 실행됨.
   Timer.periodic(const Duration(seconds: 1), (timer) {
     if (workTime != 0) {
       workTime--;
