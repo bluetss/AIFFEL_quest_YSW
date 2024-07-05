@@ -27,9 +27,7 @@ class MyHomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SizedBox(
-              height: MediaQuery.of(context).size.height * 0.2,
-            ),
+            SizedBox(height: MediaQuery.of(context).size.height * 0.2),
             GestureDetector(
               onTap: () => print('버튼이 눌렸습니다.'),
               child: Container(
@@ -48,43 +46,17 @@ class MyHomePage extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(
-              height: 20,
-            ),
+            const SizedBox(height: 20),
             Container(
               width: 300,
               height: 300,
               color: Colors.purple,
               child: Stack(
                 children: [
-                  Positioned(
-                    child: Container(
-                      width: 240,
-                      height: 240,
-                      color: Colors.red,
-                    ),
-                  ),
-                  Positioned(
-                    child: Container(
-                      width: 180,
-                      height: 180,
-                      color: Colors.orange,
-                    ),
-                  ),
-                  Positioned(
-                    child: Container(
-                      width: 120,
-                      height: 120,
-                      color: Colors.yellow,
-                    ),
-                  ),
-                  Positioned(
-                    child: Container(
-                      width: 60,
-                      height: 60,
-                      color: Colors.lightGreen,
-                    ),
-                  ),
+                  Container(width: 240, height: 240, color: Colors.red),
+                  Container(width: 180, height: 180, color: Colors.orange),
+                  Container(width: 120, height: 120, color: Colors.yellow),
+                  Container(width: 60, height: 60, color: Colors.lightGreen),
                 ],
               ),
             ),
