@@ -31,7 +31,10 @@ class MyHomePage extends StatelessWidget {
             GestureDetector(
               onTap: () => print('버튼이 눌렸습니다.'),
               child: Container(
-                color: Colors.blue,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Colors.blue,
+                ),
                 width: 100,
                 height: 50,
                 child: const Center(
