@@ -76,3 +76,9 @@ class _FirstScreenState extends State<FirstScreen> {
     );
   }
 }
+
+/*
+회고: state를 다른 위젯에 넘겨주고 다른 위젯에서 state의 상태를 변경하는 방법에 대한 고민이 많았습니다.
+저는 setstate가 일어나는 함수를 다른 위젯에 넘겨주어 그 함수를 실행시키는 방식으로 진행했지만,
+조금 더 구조적인 코드를 작성하기 위한 고민이 필요할 것 같습니다.
+ */
